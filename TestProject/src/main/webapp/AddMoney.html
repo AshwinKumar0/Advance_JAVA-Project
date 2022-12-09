@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add-Money</title>
+    <style>
+        body{
+            background: rgba(255, 195, 127, 0.34);
+
+        }
+        #container{
+            /*border: 1px solid;*/
+            padding-top: 1%;
+            width: 300px;
+            height: 300px;
+            margin-inline: auto;
+            background: rgba(11, 173, 168, 0.8);
+            text-align: center;
+            margin-top: 5%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #btn{
+            width: 70px;
+            background-color: black;
+            color: white;
+        }
+        a{
+            /*border: 1px solid;*/
+            padding: 0 5px;
+            text-decoration: none;
+            background: #000;
+            color: #800000;
+        }
+        #filler{
+            padding: 5px;
+        }
+        #msg{
+            color: red;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <h2>Enter The Amount</h2>
+    <form action="AddMoney" method="post" onsubmit="return Validator()">
+        <label>
+            <input id="filler" placeholder="Enter Amount" type="text" name="amt">
+        </label>
+        <p id="msg"></p>
+        <br>
+        <br>
+        <input id="btn" type="submit" value="Add">
+    </form>
+    <br><br>
+    <a href="ShowBalance.jsp">Check Balance</a>
+</div>
+
+<script>
+    let money = document.getElementById("filler");
+    let flag = true;
+    function Validator(){
+        if (money.value <= 0 || money.value === ""){
+            document.getElementById("msg").innerHTML = "Please Enter a valid Amount";
+            flag = false;
+        }
+        else if (money.value > 1000000000){
+            document.getElementById("msg").innerHTML = "You cannot Add more then hundred corer,\n Please Visit Your Bank to Add this much of Amount";
+            flag = false;
+        }
+        else {
+            document.getElementById("msg").innerHTML = "";
+            flag = true;
+        }
+        return flag;
+    }
+</script>
+</body>
+</html>

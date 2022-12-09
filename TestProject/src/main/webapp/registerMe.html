@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RegisterMe</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #container{
+      border: 1px solid;
+      height: 500px;
+      width: 500px;
+      margin-inline:auto;
+      background-color: rgba(154, 243, 91, 0.599);
+    }
+    h1{
+      text-align: center;
+      color:rgba(0, 0, 0, 0.752);
+      margin-top: 1%;
+    }
+    #form{
+      /* border: 1px solid; */
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: rgb(243, 243, 130);
+    }
+    .rows{
+      /* border: 1px solid ; */
+      display: flex;
+      justify-content: space-between;
+      margin-inline: 2%;
+      padding:2% ;
+      font-size: 1.2rem;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    input{
+      border: 1px solid rgb(15, 12, 12);
+    }
+    #smt{
+      display: flex;
+      justify-content: center;
+    }
+    #smt input{
+      background-color: black;
+      color: white;
+      font-weight: 550;
+      height: 30px;
+      width: 200px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #bdy{
+      background-color: cornflowerblue;
+    }
+  </style>
+</head>
+<body id="bdy">
+<form action="RegisterCheck" method="post">
+  <div id="container">
+
+    <h1>Register YourSelf</h1>
+      <div id="form">
+      <div class="rows">
+        Name <label>
+        <input type="text" name="Name">
+      </label>
+      </div>
+      <div class="rows">
+        User-Name <label>
+        <input type="text" name="UserName">
+      </label>
+      </div>
+      <div class="rows">
+        Email <label>
+        <input type="text" name="Email">
+      </label>
+      </div>
+      <div class="rows">
+        Mobile <label>
+        <input type="number" name="Mobile">
+      </label>
+      </div>
+      <div class="rows">
+        Balance <label>
+        <input type="number" name="Bal">
+      </label>
+      </div>
+      <div class="rows">
+        Password <label>
+        <input type="text" name="pass">
+      </label>
+      </div>
+      <div id="smt">
+        <input type="Submit">
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+</form>
+
+</body>
+</html>
