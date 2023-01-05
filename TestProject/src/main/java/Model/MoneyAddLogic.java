@@ -10,7 +10,7 @@ public class MoneyAddLogic {
         System.out.println(amt);
         PreparedStatement pst;
         try {
-            String query = "update bankapp set balance = ? where accno = ?";
+            String query = "update BankApp set balance = ? where Accno = ?";
             pst = DBConnect.getCon().prepareStatement(query);
             pst.setString(1,amt);
             pst.setString(2,accno);

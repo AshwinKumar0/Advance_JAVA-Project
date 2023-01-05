@@ -10,7 +10,7 @@ public class PasswordLogic {
     public boolean changePass(String pass,String accno) {
         PreparedStatement pst;
         try {
-            String query = "update bankapp set password = ? where accno = ?";
+            String query = "update BankApp set password = ? where Accno = ?";
             pst = DBConnect.getCon().prepareStatement(query);
             pst.setString(1,pass);
             pst.setString(2, accno);

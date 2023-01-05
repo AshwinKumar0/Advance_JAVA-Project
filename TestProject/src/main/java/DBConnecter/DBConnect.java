@@ -12,7 +12,7 @@ public class DBConnect {
 
     static {
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","L@zy2020");
             System.out.println("DataBase is Connected");
         }

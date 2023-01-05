@@ -13,14 +13,14 @@ public class LoginLogic {
 
         try{
 
-            String query = "Select * from bankapp where username=? and password=?";
+            String query = "Select * from BankApp where username=? and password=?";
             pst = DBConnect.getCon().prepareStatement(query);
             pst.setString(1,Username);
             pst.setString(2,Password);
             res = pst.executeQuery();
 
             if (res.next()){
-                use.setAccountNo(String.valueOf(res.getInt("accno")));
+                use.setAccountNo(String.valueOf(res.getInt("Accno")));
                 use.setName(res.getString("name"));
                 use.setEmail(res.getString("email"));
                 use.setMobile(String.valueOf(res.getInt("mobile")));

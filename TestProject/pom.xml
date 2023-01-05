@@ -15,21 +15,31 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>2.3</version>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
     </dependency>
+
     <dependency>
-      <groupId>javax</groupId>
-      <artifactId>javaee-web-api</artifactId>
-      <version>7.0</version>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat</artifactId>
+      <version>10.1.2</version>
+      <type>pom</type>
     </dependency>
   </dependencies>
   <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.3.1</version>
+      </plugin>
+    </plugins>
     <finalName>Demo3</finalName>
   </build>
 </project>

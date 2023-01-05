@@ -11,12 +11,12 @@ public class TransferLogic {
     String AccountNo;
     public boolean AccountValidator(String RecAccno) {
         try {
-            String query = "SELECT * from bankapp where accno =?";
+            String query = "SELECT * from BankApp where Accno =?";
             pst = DBConnect.getCon().prepareStatement(query);
             pst.setString(1, RecAccno);
             ResultSet res = pst.executeQuery();
             if (res.next()) {
-                 AccountNo = res.getString("accno");
+                 AccountNo = res.getString("Accno");
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -26,13 +26,13 @@ public class TransferLogic {
 
     public boolean TransferAmount(String RecAccNo,String curAcc, String Amt) {
         try {
-            String query1 = "update bankapp set balance=balance+? where accno =?";
+            String query1 = "update BankApp set balance=balance+? where accno =?";
             pst = DBConnect.getCon().prepareStatement(query1);
             pst.setInt(1,Integer.parseInt(Amt));
             pst.setString(2,RecAccNo);
             int status1 = pst.executeUpdate();
             if (status1 == 1){
-                String query2 = "update bankapp set balance=balance-? where accno =?";
+                String query2 = "update BankApp set balance=balance-? where accno =?";
                 pst = DBConnect.getCon().prepareStatement(query2);
                 pst.setInt(1,Integer.parseInt(Amt));
                 pst.setString(2,curAcc);

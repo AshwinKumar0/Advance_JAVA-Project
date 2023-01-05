@@ -1,0 +1,12 @@
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Servlets/AddMoney.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Servlets/ChangePassword.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/DBConnecter/DBConnect.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Servlets/RegisterCheck.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Servlets/TransferMoney.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Servlets/LoginCheck.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Model/PasswordLogic.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Model/TransferLogic.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Model/LoginLogic.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Model/RegisterLogic.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/Model/MoneyAddLogic.java
+/home/mrkool/Documents/Git_repo/JavaWebApps/TestProject/src/main/java/DataTransferObject/UserDto.java

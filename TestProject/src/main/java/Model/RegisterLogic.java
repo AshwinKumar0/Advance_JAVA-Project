@@ -17,7 +17,7 @@ public class RegisterLogic {
         String Password = use.getPassword();
 
         try{
-            String query = "insert into bankapp (name, username, email, mobile, balance, password) values(?,?,?,?,?,?)";
+            String query = "insert into BankApp (name, username, email, mobile, balance, password) values(?,?,?,?,?,?)";
             pst = DBConnect.getCon().prepareStatement(query);
             pst.setString(1,Name);
             pst.setString(2,UserName);
